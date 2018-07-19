@@ -1,12 +1,12 @@
-import dispatcher from './Dispatcher'
+import Dispatcher from './Dispatcher'
 
-const Actions = {
+const Action = {
     addTodo(inputText) {
         Dispatcher.dispatch({type: 'ADD_TODO', inputText})
     },
     deleteTodo(index) {
-        Dispather.dispatch({type: 'DELETE_TODD', index})
+        Dispatcher.dispatch({type: 'DELETE_TODO', index})
     }
 }
 
-export default Actions;
+export default Action;
